@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MSA.Phase2.AmazingApi</name>
+    </assembly>
+    <members>
+        <member name="T:MSA.Phase2.AmazingApi.Controllers.WeatherForecastController">
+            <summary>
+            This is the weather forecast controller that comes as a default from the project template when creating
+            a new c# Web API application.
+            </summary>
+        </member>
+        <member name="M:MSA.Phase2.AmazingApi.Controllers.WeatherForecastController.Get">
+            <summary>
+            This endpoint takes no arguments, and gives you the weather forecast
+            </summary>
+            <returns>A JSON object describing the weather forecast</returns>
+        </member>
+    </members>
+</doc>
