@@ -35,7 +35,7 @@ pip install -r requirements.txt
 
 It is recommended to use a virtual environment. A `submission.ipynb` notebook is provided for your convenience.
 
-Examples of the below processes is shown on respective folders in this directory but note that they use more simplified datasets so they are best used as guides. 
+Examples of the below processes is shown on respective folders in this directory but note that they may use more simplified datasets so they are best used as guides. The process applied in the examples may not exactly apply to the current dataset given.
 
 ## Exploratory Data Analysis (EDA):
 Before doing any processing on the data, it is essential that a data scientist has to know at least the general format of the data and the statistics of said data.
@@ -61,11 +61,11 @@ You are also to convert any columns to their appropriate types when required.
 ## Data Preparation:
 Now that you know your data inside and out, you are to clean the dataset by removing any unused values and make the dataset usable to train the model.
 
-Note that the models used in the next section does not understand strings alone.
+Note that the models used in the next section only understand numbers.
 
 Student Checklist:
 - [ ] Data deemed useless removed.
-- [ ] Converted or a model dataset made.
+- [ ] Dataset converted to a form that a model can use.
 - [ ] A train and test dataset for the model made.
 
 Ensure that you have also show some general information of the train/test dataset like in the EDA before entering the modelling stage.
