@@ -74,7 +74,7 @@ Ensure that you have also show some general information of the train/test datase
 ## Part 3 - Data Modelling:
 With the dataset made, you are to choose a model best suited for your purpose of the goal. There are a good number of models to choose from in the sci-kit learn library.
 
-After training the model, you are required to add at least another month worth of data into the existing dataset and have the model predict the values of the added dates.
+After training the model, you are required to have the model predict one month after the latest date in the dataset and comment on the results.
 
 Student Checklist:
 - [ ] Model selected.
