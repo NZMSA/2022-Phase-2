@@ -41,18 +41,18 @@ Before doing any processing on the data, it is essential that a data scientist h
 You are expected to show at least the following without hard-coding the values:
 
 Numerically:
--[ ] Average.
--[ ] Standard Deviation.
--[ ] Percentile range either:
-    -[ ] 10th and 90th or
-    -[ ] 25th and 75th.
+- [ ] Average.
+- [ ] Standard Deviation.
+- [ ] Percentile range either:
+    - [ ] 10th and 90th or
+    - [ ] 25th and 75th.
 
 Graphically:
--[ ] Correlation Plot.
--[ ] Graphing any Numerical Sections of the dataset.
+- [ ] Correlation Plot.
+- [ ] Graphing any Numerical Sections of the dataset.
 
 In addition:
--[ ] Comment on the dataset that is provided to you.
+- [ ] Comment on the dataset that is provided to you.
 
 You are also to convert any columns to their appropriate types when required.
 
@@ -62,9 +62,9 @@ Now that you know your data inside and out, you are to clean the dataset by remo
 Note that the models used in the next section does not understand strings alone.
 
 Student Checklist:
--[ ] Data deemed useless removed.
--[ ] Converted or a model dataset made.
--[ ] A train and test dataset for the model made.
+- [ ] Data deemed useless removed.
+- [ ] Converted or a model dataset made.
+- [ ] A train and test dataset for the model made.
 
 Ensure that you have also show some general information of the train/test dataset like in the EDA before entering the modelling stage.
 
@@ -74,12 +74,12 @@ With the dataset made, you are to choose a model best suited for your purpose of
 After training the model, you are required to add at least another month worth of data into the existing dataset and have the model predict the values of the added dates.
 
 Student Checklist:
--[ ] Model selected.
--[ ] Training dataset fitted.
--[ ] Testing dataset predicted.
--[ ] Predicted results compared to test dataset original values.
--[ ] Another month of the existing dataset predicted.
--[ ] Model evaluation in a paragraph.
+- [ ] Model selected.
+- [ ] Training dataset fitted.
+- [ ] Testing dataset predicted.
+- [ ] Predicted results compared to test dataset original values.
+- [ ] Another month of the existing dataset predicted.
+- [ ] Model evaluation in a paragraph.
 
 ## Resource Information:
 * [Matplotlib](https://matplotlib.org/) - A library for generating graphs.
