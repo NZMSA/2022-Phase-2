@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSA.Phase2.AmazingApi", "MSA.Phase2.AmazingApi\MSA.Phase2.AmazingApi.csproj", "{60B8740D-84FB-4DB3-9836-9B795968899D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MSA.Phase2.AmazingApi", "MSA.Phase2.AmazingApi\MSA.Phase2.AmazingApi.csproj", "{60B8740D-84FB-4DB3-9836-9B795968899D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSA.Phase2.UnitTesting", "MSA.Phase2.UnitTesting\MSA.Phase2.UnitTesting.csproj", "{0E6C07D3-32E3-4836-9575-7C166433638D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{60B8740D-84FB-4DB3-9836-9B795968899D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60B8740D-84FB-4DB3-9836-9B795968899D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60B8740D-84FB-4DB3-9836-9B795968899D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E6C07D3-32E3-4836-9575-7C166433638D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E6C07D3-32E3-4836-9575-7C166433638D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E6C07D3-32E3-4836-9575-7C166433638D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E6C07D3-32E3-4836-9575-7C166433638D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

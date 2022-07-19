@@ -20,4 +20,4 @@ The above code is how we access the configuration for a specific key.
 
 ## Summary
 
-We learned about how to set up app configuration. We also learned how to access the configuration for a specific key. The next module is on using 
+We learned about how to set up app configuration. We also learned how to access the configuration for a specific key. The [next module](https://github.com/NZMSA/2022-Phase-2/tree/main/2.%20Backend/Unit%20Testing/Readme.md) is on using 

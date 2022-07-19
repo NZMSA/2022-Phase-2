@@ -13,8 +13,7 @@ You would have learnt about what a web API is, and played around with one during
 3. Creating Controllers
 4. Calling other APIs
 5. Using Application Configuration
-6. Unit Testing using NUnit and FluentAssertions
-7. Unit Testing using NSubstitute
+6. Unit Testing using NUnit
 
 ## Phase 2 Briefing
 
@@ -45,6 +44,5 @@ You will need to:
 You will need to:
 
 * Demonstrate the use of NUnit to unit test your code.
-* Explain and demonstrate the use of FluentAssertions in your tests.
 * Use at least one substitute to test your code.
 * Demonstrate an understanding of why the middleware libraries made your code easier to test.
