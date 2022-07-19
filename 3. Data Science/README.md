@@ -4,7 +4,7 @@ Welcome to Phase 2 Data Science section.
 
 In this section we will be covering Exploratory Data Analysis (EDA), Data Preparation and Data Modelling on the weather dataset in order to predict the weather in the future.
 
-Examples of the process is shown on respective folders in this directory. By now, you should be able to setup a Jupyter instance and be familiar with at least some basics of Python in [this module](https://docs.microsoft.com/en-us/learn/paths/beginner-python/).
+By now, you should be able to setup a Jupyter instance and be familiar with at least some basics of Python in [this module](https://docs.microsoft.com/en-us/learn/paths/beginner-python/).
 
 ## Requirements:
 * [Python 3.8+](https://www.python.org/)
@@ -33,7 +33,9 @@ Install the following libraries as listed in `requirements.txt` via the command:
 pip install -r requirements.txt
 ```
 
-It is recommended to use a virtual environment.
+It is recommended to use a virtual environment. A `submission.ipynb` notebook is provided for your convenience.
+
+Examples of the below processes is shown on respective folders in this directory but note that they use more simplified datasets so they are best used as guides. 
 
 ## Exploratory Data Analysis (EDA):
 Before doing any processing on the data, it is essential that a data scientist has to know at least the general format of the data and the statistics of said data.
