@@ -14,7 +14,7 @@ Recommended:
 * [Visual Studio Code](https://code.visualstudio.com/) with [Python Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python) installed.
 
 ## Dataset Information:
-The dataset `nzmsa-data.csv` is obtained from [IOWA Environmental Mesonet - Iowa State University](https://mesonet.agron.iastate.edu/).
+The dataset `weather-data.csv` is obtained from [IOWA Environmental Mesonet - Iowa State University](https://mesonet.agron.iastate.edu/).
 
 Columns for this dataset:
 * `station`: Acronym for the place of data capture.
@@ -35,9 +35,9 @@ pip install -r requirements.txt
 
 It is recommended to use a virtual environment. A `submission.ipynb` notebook is provided for your convenience.
 
-Examples of the below processes is shown on respective folders in this directory but note that they may use more simplified datasets so they are best used as guides. The process applied in the examples may not exactly apply to the current dataset given.
+Examples of the below processes is shown on respective folders in this directory but note that they may use more simplified datasets so they are at best used as guides. The process applied in the examples may not exactly apply to the current dataset given.
 
-## Exploratory Data Analysis (EDA):
+## Part 1 - Exploratory Data Analysis (EDA):
 Before doing any processing on the data, it is essential that a data scientist has to know at least the general format of the data and the statistics of said data.
 
 You are expected to show at least the following without hard-coding the values:
@@ -54,11 +54,11 @@ Graphically:
 - [ ] Graphing any Numerical Sections of the dataset.
 
 In addition:
-- [ ] Comment on the dataset that is provided to you.
+- [ ] Comment on the dataset that is provided to you based on the EDA.
 
 You are also to convert any columns to their appropriate types when required.
 
-## Data Preparation:
+## Part 2 - Data Preparation:
 Now that you know your data inside and out, you are to clean the dataset by removing any unused values and make the dataset usable to train the model.
 
 Note that the models used in the next section only understand numbers.
@@ -67,10 +67,11 @@ Student Checklist:
 - [ ] Data deemed useless removed.
 - [ ] Dataset converted to a form that a model can use.
 - [ ] A train and test dataset for the model made.
+- [ ] State a reason for each changes made to the DataFrame.
 
 Ensure that you have also show some general information of the train/test dataset like in the EDA before entering the modelling stage.
 
-## Data Modelling:
+## Part 3 - Data Modelling:
 With the dataset made, you are to choose a model best suited for your purpose of the goal. There are a good number of models to choose from in the sci-kit learn library.
 
 After training the model, you are required to add at least another month worth of data into the existing dataset and have the model predict the values of the added dates.
@@ -78,10 +79,15 @@ After training the model, you are required to add at least another month worth o
 Student Checklist:
 - [ ] Model selected.
 - [ ] Training dataset fitted.
-- [ ] Testing dataset predicted.
-- [ ] Predicted results compared to test dataset original values.
+- [ ] Testing dataset scored.
 - [ ] Another month of the existing dataset predicted.
 - [ ] Model evaluation in a paragraph.
+
+## Passing this section:
+
+In order to pass Phase 2, you are required to carry out all 3 parts of this section. Any interesting observations should be noted, especially in the first and third parts of this section.
+
+You are **NOT** required to achieve a very accurate model to pass phase 2, but it is recommended that you try and aim for higher accuracy scores.
 
 ## Resource Information:
 * [Matplotlib](https://matplotlib.org/) - A library for generating graphs.
