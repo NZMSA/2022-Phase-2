@@ -14,7 +14,7 @@ To pass phase 2, you must complete TWO of the three modules.
 ## Submission Date for Phase 2: Wednesday 10th August at 11:59pm
 Please read through the criteria on the respective GitHub documentation prior to submitting to ensure you have covered everything. 
  
-Submission form: [To be released at the beginning of August]
+You can find the submission form [here](https://forms.office.com/r/aAfEYN0P5x)
 
 Sign up for Microsoft Azure for Students [(Documentation can be found here)](https://github.com/NZMSA/2019-Phase-1/tree/master/Azure%20For%20Students). Get $100 credit when you create your free account. There is no credit card needed and 12 months of free Azure services. Find out more information [here](https://azure.microsoft.com/en-us/free/students/)
 
