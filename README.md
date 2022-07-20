@@ -1,5 +1,5 @@
 # Microsoft Student Accelerator New Zealand 2022 Phase 2
-Welcome to the 2022 NZMSA Phase 1. Please make sure you have read through this README document before starting. We will continuously update this repository as we find typos or documentations that need clarification. 
+Welcome to the 2022 NZMSA Phase 2. Please make sure you have read through this README document before starting. We will continuously update this repository as we find typos or documentations that need clarification. 
 
 ### What to learn more about MSA?
 Come visit our website to understand what we do: [Microsoft Student Accelerator New Zealand Website](http://aka.ms/nzmsawebsite)
