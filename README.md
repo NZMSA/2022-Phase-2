@@ -6,7 +6,7 @@ Come visit our website to understand what we do: [Microsoft Student Accelerator 
 
 # We have created three modules for Phase 2:
 * Front End Development - React Web App
-* Back End development - Database and API
+* Back End development - .NET 6 API
 * Data Science Pathway - Exploratory Data Analysis, Data processing and data modelling
 
 To pass phase 2, you must complete TWO of the three modules.

@@ -139,7 +139,7 @@ Save the changes you have made in `App.tsx` so far, refresh the react web page a
 # Step 3 - Making an API call
 So far, we've been taking input from the user and display it right back to them, that's not really useful 😳 
 
-In this section, we will take the input from the user, look up infomration online via an web API (application programming interface), and display the information we found to the user. 
+In this section, we will take the input from the user, look up information online via an web API (application programming interface), and display the information we found to the user. 
 
 We will utilize the Web API available on [https://pokeapi.co/](https://pokeapi.co/), please take a few minutes to explore the website to discover what it offers. 
 
@@ -634,6 +634,6 @@ export default App;
 Create a simple React application that meets the following requirement:
 1. Create a new typescript and react web app
 2. Connect this application to a *different* 3rd party RESTful Web API
-3. Allow users to input information that will be utilised by the API
+3. Allow users to input information that will be utilized by the API
 4. Make use of a UI library like Material-UI.
-5. Utilise source control through GitHub.
+5. Utilize source control through GitHub.
