@@ -1,27 +1,48 @@
-import React, {useState} from 'react';
-import './App.css';
+import axios from "axios";
+import { useState } from "react";
+import "./App.css";
+import heroCard from "./page/hero"
+
+
 
 function App() {
 
-  const [pokemonName, setPokemonName] = useState("");
+  const [ heroName, setHeroName ]= useState("");
+  const HERO_BASE_URL = "https://akabab.github.io/superhero-api/api";
 
   function search() {
-    alert("Search button has been clicked!");
-}
+    axios.get(HERO_BASE_URL + "/all.json").then((res) => {
+      console.log(res.data[heroName]);
+      var obj = res.data;
+      var found = obj.find(
+        function(item:any) {
+          return item.name === heroName
+        }
+      )
+      console.log(found)
+    });
+  }
 
   return (
     <div>
-        <h1>Pokemon Search</h1>
-        <div>
-          <label>Pokemon Name</label><br/>
-          <input type="text" id="pokemon-name" name="pokemon-name" onChange={e => setPokemonName(e.target.value)}/><br/>
-          <button onClick={search}>
-            Search
-          </button>
-        </div>
-        <p>
-        You have entered {pokemonName}
-        </p>
+      <h1>Superhero Search</h1>
+
+      <div>
+        <label>Superhero Name</label>
+        <br />
+        <input
+          type="text"
+          id="hero-name"
+          name="hero-name"
+          onChange={(e) => setHeroName(e.target.value)}
+        />
+        <br />
+        <button onClick={search}>Search</button>
+      </div>
+
+      <p>You have entered {heroName}</p>
+
+      <div id="hero-result">This will show the result</div>
     </div>
   );
 }
