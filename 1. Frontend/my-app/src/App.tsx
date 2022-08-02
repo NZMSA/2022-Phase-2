@@ -1,48 +1,47 @@
 import axios from "axios";
 import { useState } from "react";
 import "./App.css";
-import heroCard from "./page/hero"
+import DogCard from "./page/cards"
 
 
 
 function App() {
 
-  const [ heroName, setHeroName ]= useState("");
-  const HERO_BASE_URL = "https://akabab.github.io/superhero-api/api";
+  const [ dogName, setDogName ]= useState("");
+
+  const DOG_BASE_URL = "https://dog.ceo/api/breeds/list/all";
+
 
   function search() {
-    axios.get(HERO_BASE_URL + "/all.json").then((res) => {
-      console.log(res.data[heroName]);
-      var obj = res.data;
-      var found = obj.find(
-        function(item:any) {
-          return item.name === heroName
-        }
-      )
-      console.log(found)
+    axios.get(DOG_BASE_URL).then((res) => {
+      console.log(res.data.message);
+      console.log(Object.values(res.data.message)[0])
     });
   }
 
   return (
     <div>
-      <h1>Superhero Search</h1>
+      <h1>Dog Search</h1>
 
       <div>
-        <label>Superhero Name</label>
+        <label>Dog Name</label>
         <br />
         <input
           type="text"
-          id="hero-name"
-          name="hero-name"
-          onChange={(e) => setHeroName(e.target.value)}
+          id="dog-name"
+          name="dog-name"
+          onChange={(e) => setDogName(e.target.value)}
         />
         <br />
         <button onClick={search}>Search</button>
       </div>
 
-      <p>You have entered {heroName}</p>
+      <p>You have entered {dogName}</p>
 
-      <div id="hero-result">This will show the result</div>
+      <div id="dog-result">This will show the result</div>
+      <div>
+        <DogCard />
+      </div>
     </div>
   );
 }
