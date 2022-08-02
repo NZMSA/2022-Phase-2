@@ -3,19 +3,21 @@ import { useState } from "react";
 import "./App.css";
 import DogCard from "./page/cards"
 
-
-
 function App() {
 
   const [ dogName, setDogName ]= useState("");
 
-  const DOG_BASE_URL = "https://dog.ceo/api/breeds/list/all";
+  const DOG_BASE_URL = "https://dog.ceo/api/breed/hound/images";
 
 
   function search() {
     axios.get(DOG_BASE_URL).then((res) => {
-      console.log(res.data.message);
-      console.log(Object.values(res.data.message)[0])
+      let obj = res.data;
+      const newArray = Object.keys(obj)
+        .map(function(key) {
+          return obj[key]
+        })
+        console.log(newArray[0])
     });
   }
 
