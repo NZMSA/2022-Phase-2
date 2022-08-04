@@ -2,52 +2,85 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "./App.css";
-import DogCard from "./page/cards"
+import DogCard from "./pages/Cards"
 import BREED_LIST from "./const";
+import { Button, Segment, Input } from "semantic-ui-react";
 
 function App() {
   
   const [ dogName, setDogName ]= useState("");
-  const [list, setList] = useState<String[]>([]);
-  const [image, setImage] = useState([]);
+  const [filteredList, setFilteredList] = useState<String[]>([]);
+  const [ imageUrlList, setImageUrlList] = useState<String[]>([]);
   
-  // const DOG_BASE_URL = "https://dog.ceo/api/breed/hound/images";
   function random(obj : any){
     return Math.floor(Math.random() * obj.length + 1)
   }
   
-  function search() {
-    list.map((ele) => {
-      return (
-        axios.get(`https://dog.ceo/api/breed/${ele}/images`).then((res) => {
-          let obj = res.data.message;
-          console.log("dog",obj[0])
-          setImage(obj[random(obj)])
-      }));
-    })
-  }
+async function search() {
+  const curDogs: string[] = await Promise.all(filteredList.map(async (ele) => {
+    let res:any = await axios.get(`https://dog.ceo/api/breed/${ele}/images`)
+    let obj = res.data.message
+    return obj[0]
+}))
+  setImageUrlList(curDogs)
+}
+
+async function shuffle() {
+  const curDogs: string[] = await Promise.all(filteredList.map(async (ele) => {
+    let res:any = await axios.get(`https://dog.ceo/api/breed/${ele}/images`)
+    let obj = res.data.message
+    return obj[random(obj)]
+}))
+  setImageUrlList(curDogs)
+}
 
   useEffect(() => {
-    setList(BREED_LIST.filter((names) => names.startsWith(dogName)))
-  }, [dogName]); // Only re-run the effect if count changes
+    if (dogName === "") {
+      setFilteredList([])
+      setImageUrlList([])
+    } else {
+      setFilteredList(BREED_LIST.filter((names) => names.startsWith(dogName)))
+    }
+  }, [dogName]); 
 
   return (
     <div>
-      <h1>Dog Search</h1>
+      <h1>🐶 🐶 🐶 Dog Search 🐶 🐶 🐶</h1> 
 
       <div>
-        <input
+      <Segment inverted>
+        <Input
+          placeholder="Search Dog Breed"
           type="text"
           id="dog-name"
           name="dog-name"
           onChange={(e) => setDogName(e.target.value)}
         />
+       </Segment>
         <br />
-        <button onClick={search}>Search</button>
+        <Button.Group size='large'>
+          <Button onClick={search}>Search</Button>
+          <Button.Or />
+          <Button onClick={shuffle}>Shuffle</Button>
+         </Button.Group>
       </div>
+      
+      {
+        filteredList.map( (ele) => {
+          return <p>{ele}</p>
+        })
+      }
+      <div className="image">
 
-      <div>
-       <DogCard imageLink={image}/> 
+      {
+        imageUrlList.map( (ele, i) => {
+          return (
+            <div>
+              <h1>{filteredList[i]}</h1>
+              <DogCard imageLink={ele}/> 
+            </div>)
+        })
+      }
       </div>
     </div>
   );
