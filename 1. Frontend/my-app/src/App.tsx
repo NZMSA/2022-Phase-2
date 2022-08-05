@@ -47,7 +47,7 @@ async function shuffle() {
     <div>
       <h1>🐶 🐶 🐶 Dog Search 🐶 🐶 🐶</h1> 
 
-      <div>
+      <div className="search-bar">
       <Segment inverted>
         <Input
           placeholder="Search Dog Breed"
@@ -57,7 +57,6 @@ async function shuffle() {
           onChange={(e) => setDogName(e.target.value)}
         />
        </Segment>
-        <br />
         <Button.Group size='large'>
           <Button onClick={search}>Search</Button>
           <Button.Or />
@@ -65,23 +64,27 @@ async function shuffle() {
          </Button.Group>
       </div>
       
+      <div className="filtered-list">
       {
         filteredList.map( (ele) => {
           return <p>{ele}</p>
         })
       }
+      </div>
+      <br/>
+      <br/>
       <div className="image">
-
       {
         imageUrlList.map( (ele, i) => {
           return (
             <div>
-              <h1>{filteredList[i]}</h1>
+              <h2>{"Breed: " + filteredList[i].toUpperCase()}</h2>
               <DogCard imageLink={ele}/> 
             </div>)
         })
       }
       </div>
+
     </div>
   );
 }
