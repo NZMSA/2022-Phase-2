@@ -1,3 +1,4 @@
+import axios from 'axios';
 import { useState } from 'react';
 import './App.css';
 
@@ -5,6 +6,7 @@ function App() {
   // State variables
   const [monsterName, setMonsterName] = useState("");
 
+  const MONSTER_HUNTER_BASE_URL = "https://mhw-db.com"
   return (
     <div>
       <h1>
@@ -26,11 +28,16 @@ function App() {
       <p>
         You have entered {monsterName}
       </p>
+
+      <div id="pokemon-result">Monster data here!</div>
     </div>
   );
 
   function search(){
-      alert("Search button has been clicked!");
+      axios.get(MONSTER_HUNTER_BASE_URL + "/monsters?q={\"name\":\"" + monsterName + "\"}")
+      .then((res) => {
+        console.log(res.data);
+      })
   }
 }
 
