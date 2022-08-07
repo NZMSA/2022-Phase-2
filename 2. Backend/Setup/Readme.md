@@ -1,4 +1,4 @@
-# Getting Started :rocket:
+# Getting Started :rocket: [DONE]
 
 To begin, you will need the following tools from phase 1:
 - [Visual Studio](https://visualstudio.microsoft.com/downloads/)
