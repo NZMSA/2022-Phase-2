@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 function App() {
+  // State variables
+  const [monsterName, setMonsterName] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>
+        Monster Hunter Database: Monster Search
+      </h1>
+      
+      <div>
+        <label>Monster Name</label><br/>
+        <input
+          type="text"
+          id="monster-name"
+          name="monster-name"
+          onChange={e => setMonsterName(e.target.value)}
+        />
+        <br/>
+        <button onClick={search}>Search</button>
+      </div>
+
+      <p>
+        You have entered {monsterName}
+      </p>
     </div>
   );
+
+  function search(){
+      alert("Search button has been clicked!");
+  }
 }
 
 export default App;
