@@ -38,7 +38,9 @@ You will need to:
 You will need to:
 
 * Demonstrate an understanding of how these middleware via DI (dependency injection) simplifies your code.
-
+   *******************************************************************************************************************************************************
+By configuring swagger it allowed me to implement the NSwag middleware that available for configuration when the application starts running. With the NSwag middleware I was able to use a third-party API that incorporates swagger to generate a client implementation without the use of an existing API. With the middleware configured, I was able to easily add in app.UseOpenApi() and app.UseSwaggerUi3() to run an OpenAPI specification generator and view from a web browser, respectively. In general, the middleware allowed me to just a few simple lines of code to get a lot of work done. 
+ *********************************************************************************************************************************************************          
 ### Section Three
 
 You will need to:
@@ -46,3 +48,7 @@ You will need to:
 * Demonstrate the use of NUnit to unit test your code.
 * Use at least one substitute to test your code.
 * Demonstrate an understanding of why the middleware libraries made your code easier to test.
+
+*********************************************************************************************************************************************************
+From my coding experience during this week's phase 2, the middleware libraries made it easier to test because of the swaggerUI web browser. It allowed me to see if my CRUD operations worked or not by simply executing them on the browser. By doing so, I was able to get response types that I implemented and figure out what the issue was from there. 
+*********************************************************************************************************************************************************
